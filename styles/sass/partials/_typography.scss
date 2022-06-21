@@ -1,0 +1,46 @@
+html {
+    font-size: 125%;
+}
+
+body,
+.keypad__btn {
+    font-family: 'League Spartan';
+    font-weight: 700;
+}
+
+.logo {
+    font-size: 1.6rem;
+}
+
+.theme {
+    font-size: .7rem;
+
+    label {
+        text-transform: uppercase;
+        letter-spacing: .5px;
+    }
+
+}
+
+.screen,
+.keypad__btn,
+.attribution {
+    letter-spacing: -1px;
+}
+
+.screen {
+    font-size: 1.8rem;
+}
+
+.keypad__btn {
+    font-size: 1.6rem;
+    
+    &--secondary,
+    &--equals {
+        text-transform: uppercase;
+    }
+
+    &--symbol {
+        font-size: 1.1rem;
+    }
+}

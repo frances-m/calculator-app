@@ -259,3 +259,105 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.keypad__btn {
+  height: 60px;
+  width: 70px;
+  border: none;
+  border-radius: 10%;
+  border-bottom: 5px solid transparent;
+  cursor: pointer;
+}
+
+input[type=range] {
+  width: 100%;
+  height: 25px;
+  padding: 0 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: hsl(223deg, 31%, 20%);
+  border-radius: 20px;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 125%;
+}
+
+body,
+.keypad__btn {
+  font-family: "League Spartan";
+  font-weight: 700;
+}
+
+.logo {
+  font-size: 1.6rem;
+}
+
+.theme {
+  font-size: 0.7rem;
+}
+.theme label {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.screen,
+.keypad__btn,
+.attribution {
+  letter-spacing: -1px;
+}
+
+.screen {
+  font-size: 1.8rem;
+}
+
+.keypad__btn {
+  font-size: 1.6rem;
+}
+.keypad__btn--secondary, .keypad__btn--equals {
+  text-transform: uppercase;
+}
+.keypad__btn--symbol {
+  font-size: 1.1rem;
+}
+
+/* THEME ONE */
+.theme-one input[type=range] {
+  background-color: hsl(222deg, 26%, 31%);
+}
+.theme-one input[type=range]::-webkit-slider-thumb {
+  background: hsl(6deg, 63%, 50%);
+}
+.theme-one input[type=range]::-moz-range-thumb {
+  background: hsl(6deg, 63%, 50%);
+}
+
+.theme__slider {
+  width: 60px;
+}

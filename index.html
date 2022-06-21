@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <title>Frontend Mentor | Calculator app</title>
 
 </head>
-<body>
+<body class="theme-one">
 
     <header>
         <div class="wrapper">
@@ -35,14 +41,14 @@
     <main>
         <div class="wrapper">
 
-            <!-- Calculator Display-->
-            <section class="display">
-                <p id="result">0</p>
-            </section> <!-- END display -->
+            <!-- Calculator Screen-->
+            <section class="screen">
+                <p id="result">399,981</p>
+            </section> <!-- END screen -->
 
             <!-- Calculator Keypad -->
             <section class="keypad">
-                <div class="keypad__row keypad__row--1">
+                <div class="keypad__row">
                     <button class="keypad__btn" type="button">
                         7
                     </button>
@@ -52,12 +58,12 @@
                     <button class="keypad__btn" type="button">
                         9
                     </button>
-                    <button class="keypad__btn keypad__btn--secondary" type="button">
+                    <button class="keypad__btn keypad__btn--secondary keypad__btn--symbol" type="button">
                         Del
                     </button>
                 </div> <!-- END keypad__row -->
 
-                <div class="keypad__row keypad__row--2">
+                <div class="keypad__row">
                     <button class="keypad__btn" type="button">
                         4
                     </button>
@@ -67,12 +73,12 @@
                     <button class="keypad__btn" type="button">
                         6
                     </button>
-                    <button class="keypad__btn" type="button">
+                    <button class="keypad__btn keypad__btn--symbol" type="button">
                         +
                     </button>
                 </div> <!-- END keypad__row -->
 
-                <div class="keypad__row keypad__row--3">
+                <div class="keypad__row">
                     <button class="keypad__btn" type="button">
                         1
                     </button>
@@ -82,31 +88,31 @@
                     <button class="keypad__btn" type="button">
                         3
                     </button>
-                    <button class="keypad__btn" type="button">
+                    <button class="keypad__btn keypad__btn--symbol" type="button">
                         -
                     </button>
                 </div> <!-- END keypad__row -->
 
-                <div class="keypad__row keypad__row--4">
-                    <button class="keypad__btn" type="button">
+                <div class="keypad__row">
+                    <button class="keypad__btn keypad__btn--symbol" type="button">
                         .
                     </button>
                     <button class="keypad__btn" type="button">
                         0
                     </button>
-                    <button class="keypad__btn" type="button">
+                    <button class="keypad__btn keypad__btn--symbol" type="button">
                         /
                     </button>
-                    <button class="keypad__btn" type="button">
+                    <button class="keypad__btn keypad__btn--symbol" type="button">
                         x
                     </button>
                 </div> <!-- END keypad__row -->
 
-                <div class="keypad__row keypad__row--5">
-                    <button class="keypad__btn keypad__btn--secondary keypad__btn--large" type="button">
+                <div class="keypad__row">
+                    <button class="keypad__btn keypad__btn--secondary keypad__btn--double keypad__btn--symbol" type="button">
                         Reset
                     </button>
-                    <button class="keypad__btn keypad__btn--large keypad__btn--equals" type="button">
+                    <button class="keypad__btn keypad__btn--double keypad__btn--equals keypad__btn--symbol" type="button">
                         =
                     </button>
                 </div> <!-- END keypad__row -->
@@ -115,9 +121,11 @@
     </main>
 
     <footer>
-        <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="https://francesm.dev">Frances McKenzie</a>.
+        <div class="wrapper">
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://francesm.dev">Frances McKenzie</a>.
+            </div>
         </div>
     </footer>
 </body>

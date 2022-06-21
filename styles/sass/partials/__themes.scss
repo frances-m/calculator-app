@@ -1,0 +1,10 @@
+/* THEME ONE */
+.theme-one {
+
+    input[type=range] {
+        background-color: $theme-one__bg--main;
+
+        &::-webkit-slider-thumb { background: $theme-one__key--equals; }
+        &::-moz-range-thumb { background: $theme-one__key--equals; }
+    }
+}

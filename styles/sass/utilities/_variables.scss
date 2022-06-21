@@ -1,0 +1,64 @@
+// **COLOURS** //
+
+// *Theme 1* //
+// backgrounds
+$theme-one__bg--main: hsl(222, 26%, 31%);
+$theme-one__bg--keypad: hsl(223, 31%, 20%);
+$theme-one__bg--screen: hsl(224, 36%, 15%);
+
+// keys
+$theme-one__key--bg: hsl(30, 25%, 89%);
+$theme-one__key--shadow: hsl(28, 16%, 65%);
+
+$theme-one__key--secondary: hsl(225, 21%, 49%);
+$theme-one__key--secondary-shadow: hsl(224, 28%, 35%);
+
+$theme-one__key--equals: hsl(6, 63%, 50%);
+$theme-one__key--equals-shadow: hsl(6, 70%, 34%);
+
+// text 
+$theme-one__text--dark: hsl(221, 14%, 31%);
+$theme-one__text--light: hsl(0, 0%, 100%);
+
+// *Theme 2* //
+// backgrounds
+$theme-two__bg--main: hsl(0, 0%, 90%);
+$theme-two__bg--keypad: hsl(0, 5%, 81%);
+$theme-two__bg--screen: hsl(0, 0%, 93%);
+
+// keys
+$theme-two__key--bg: hsl(45, 7%, 89%);
+$theme-two__key--shadow: hsl(35, 11%, 61%);
+
+$theme-two__key--secondary: hsl(185, 42%, 37%);
+$theme-two__key--secondary-shadow: hsl(185, 58%, 25%);
+
+$theme-two__key--equals: hsl(25, 98%, 40%);
+$theme-two__key--equals-shadow: hsl(25, 99%, 27%);
+
+// text 
+$theme-two__text--dark: hsl(60, 10%, 19%);
+$theme-two__text--light: hsl(0, 0%, 100%);
+
+// *Theme 3* //
+// backgrounds
+$theme-three__bg--main: hsl(268, 75%, 9%);
+$theme-three__bg--keypad: hsl(268, 71%, 12%);
+$theme-three__bg--screen: hsl(268, 71%, 12%);
+
+// keys
+$theme-three__key--bg: hsl(268, 47%, 21%);
+$theme-three__key--shadow: hsl(290, 70%, 36%);
+
+$theme-three__key--secondary: hsl(176, 100%, 44%);
+$theme-three__key--secondary-shadow: hsl(177, 92%, 70%);
+
+$theme-three__key--equals: hsl(281, 89%, 26%);
+$theme-three__key--equals-shadow: hsl(285, 91%, 52%);
+
+// text 
+$theme-three__text--main: hsl(52, 100%, 62%);
+$theme-three__text--dark: hsl(198, 20%, 13%);
+$theme-three__text--light: hsl(0, 0%, 100%);
+
+
