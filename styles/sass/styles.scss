@@ -1,0 +1,16 @@
+// UTILITES
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/placeholders';
+
+// GLOBAL STYLES
+@import './partials/setup';
+@import './partials/baseStyles';
+@import './partials/typography';
+
+// MAIN SITE
+@import './calculator';
+
+
+// MEDIA QUERIES
+@import './partials/mediaQueries';

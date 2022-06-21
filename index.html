@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+
+    <header>
+        <div class="wrapper">
+
+            <!-- Site Logo -->
+            <h1 class="logo">calc</h1>
+
+            <!-- Themes Slider -->
+            <div class="theme">
+                <label for="themes">Theme</label>
+                <div class="theme__slider">
+                    <div class="theme__numbers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
+                    <input type="range" min="1" max="3" value="1" id="themes">
+                </div> <!-- END theme__slider -->
+            </div> <!-- END theme -->
+        </div> <!-- END wrapper -->
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+            <!-- Calculator Display-->
+            <section class="display">
+                <p id="result">0</p>
+            </section> <!-- END display -->
+
+            <!-- Calculator Keypad -->
+            <section class="keypad">
+                <div class="keypad__row keypad__row--1">
+                    <button class="keypad__btn" type="button">
+                        7
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        8
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        9
+                    </button>
+                    <button class="keypad__btn keypad__btn--secondary" type="button">
+                        Del
+                    </button>
+                </div> <!-- END keypad__row -->
+
+                <div class="keypad__row keypad__row--2">
+                    <button class="keypad__btn" type="button">
+                        4
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        5
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        6
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        +
+                    </button>
+                </div> <!-- END keypad__row -->
+
+                <div class="keypad__row keypad__row--3">
+                    <button class="keypad__btn" type="button">
+                        1
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        2
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        3
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        -
+                    </button>
+                </div> <!-- END keypad__row -->
+
+                <div class="keypad__row keypad__row--4">
+                    <button class="keypad__btn" type="button">
+                        .
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        0
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        /
+                    </button>
+                    <button class="keypad__btn" type="button">
+                        x
+                    </button>
+                </div> <!-- END keypad__row -->
+
+                <div class="keypad__row keypad__row--5">
+                    <button class="keypad__btn keypad__btn--secondary keypad__btn--large" type="button">
+                        Reset
+                    </button>
+                    <button class="keypad__btn keypad__btn--large keypad__btn--equals" type="button">
+                        =
+                    </button>
+                </div> <!-- END keypad__row -->
+            </section> <!-- END keypad-->
+        </div> <!-- END wrapper -->
+    </main>
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://francesm.dev">Frances McKenzie</a>.
+        </div>
+    </footer>
+</body>
+</html>
