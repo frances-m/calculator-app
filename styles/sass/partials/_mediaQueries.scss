@@ -1,0 +1,14 @@
+@media (min-height: 750px) {
+    .screen {
+        font-size: 2.4rem;
+    }
+
+    .keypad__btn {
+        font-size: 1.8rem;
+
+        &--text,
+        &--equals {
+            font-size: 1.3rem;
+        }
+    }
+}

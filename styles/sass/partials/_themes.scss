@@ -1,0 +1,167 @@
+/* THEME ONE */
+.theme-one {
+    background: $theme-one__bg--main;
+
+    .logo,
+    .theme,
+    .screen {
+        color: $theme-one__text--light;
+    }       
+
+    input[type=range] {
+        background: $theme-one__bg--keypad;
+
+        &::-webkit-slider-thumb { 
+            background: $theme-one__key--equals; 
+
+            // &:active {}
+        }
+
+        &::-moz-range-thumb { 
+            background: $theme-one__key--equals; 
+
+            // &:active {}
+        }
+    }
+
+    .screen {
+        background: $theme-one__bg--screen;
+    }
+
+
+    .keypad {
+        background: $theme-one__bg--keypad;
+
+        &__btn {
+            background: $theme-one__key--bg;
+            color: $theme-one__text--dark;
+            border-bottom-color: $theme-one__key--shadow;
+
+            &--text,
+            &--equals {
+                color: $theme-one__text--light;
+            }
+            
+            &--text {
+                background: $theme-one__key--secondary;
+                border-bottom-color: $theme-one__key--secondary-shadow;
+            }
+
+            &--equals {
+                background: $theme-one__key--equals;
+                border-bottom-color: $theme-one__key--equals-shadow;
+            }
+        }
+    }
+}
+
+/* THEME TWO */
+.theme-two {
+    background: $theme-two__bg--main;
+
+    .logo,
+    .theme,
+    .screen {
+        color: $theme-two__text--dark;
+    }       
+
+    input[type=range] {
+        background: $theme-two__bg--keypad;
+
+        &::-webkit-slider-thumb { 
+            background: $theme-two__key--equals; 
+
+            // &:active {}
+        }
+        &::-moz-range-thumb { 
+            background: $theme-two__key--equals;
+
+            // &:active {}
+        }
+    }
+
+    .screen {
+        background: $theme-two__bg--screen;
+    }
+
+
+    .keypad {
+        background: $theme-two__bg--keypad;
+
+        &__btn {
+            background: $theme-two__key--bg;
+            color: $theme-two__text--dark;
+            border-bottom-color: $theme-two__key--shadow;
+
+            &--text,
+            &--equals {
+                color: $theme-two__text--light;
+            }
+            
+            &--text {
+                background: $theme-two__key--secondary;
+                border-bottom-color: $theme-two__key--secondary-shadow;
+            }
+
+            &--equals {
+                background: $theme-two__key--equals;
+                border-bottom-color: $theme-two__key--equals-shadow;
+            }
+        }
+    }
+}
+
+/* THEME THREE */
+.theme-three {
+    background: $theme-three__bg--main;
+
+    .logo,
+    .theme,
+    .screen {
+        color: $theme-three__text--main;
+    }       
+
+    input[type=range] {
+        background: $theme-three__bg--screen;
+
+        &::-webkit-slider-thumb { 
+            background: $theme-three__key--equals; 
+
+            &:active { background: $theme-three__key--equals-shadow; }
+        }
+        &::-moz-range-thumb { 
+            background: $theme-three__key--equals; 
+
+            &:active { background: $theme-three__key--equals-shadow; }
+        }
+    }
+
+    .screen {
+        background: $theme-three__bg--screen;
+    }
+
+
+    .keypad {
+        background: $theme-three__bg--keypad;
+
+        &__btn {
+            background: $theme-three__key--bg;
+            color: $theme-three__text--main;
+            border-bottom-color: $theme-three__key--shadow;
+
+
+            &--text {
+                color: $theme-three__text--light;
+                background: $theme-three__key--secondary;
+                border-bottom-color: $theme-three__key--secondary-shadow;
+            }
+            
+            &--equals {
+                color: $theme-three__text--dark;
+                background: $theme-three__key--equals;
+                border-bottom-color: $theme-three__key--equals-shadow;
+            }
+        }
+    }
+}
+

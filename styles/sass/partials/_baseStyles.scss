@@ -1,15 +1,25 @@
+body {
+    min-height: 100vh;
+}
+
 .wrapper {
     margin: 0 auto;
-    width: 90%;
-    //max-width: ;
+    width: 88%;
+    max-width: 530px;
+}
+
+.screen,
+.keypad {
+    border-radius: 15px;
 }
 
 .keypad__btn {
-    height: 60px;
-    width: 70px;
+    height: 65px;
+    width: 21.25%;
+    padding: 5px 0 0 0;
     border: none;
-    border-radius: 10%;
-    border-bottom: 5px solid transparent;
+    border-radius: 8px;
+    border-bottom: 4px solid transparent;
     cursor: pointer;
 }
 
@@ -18,7 +28,6 @@ input[type=range] {
     height: 25px;
     padding: 0 5px;
     appearance: none;
-    background: $theme-one__bg--keypad;
     border-radius: 20px;
     
     &::-webkit-slider-thumb {@include thumb()}

@@ -29,18 +29,18 @@ body,
 }
 
 .screen {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .keypad__btn {
     font-size: 1.6rem;
     
-    &--secondary,
-    &--equals {
+    &--secondary {
         text-transform: uppercase;
     }
-
-    &--symbol {
+    
+    &--text,
+    &--equals {
         font-size: 1.1rem;
     }
 }

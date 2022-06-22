@@ -1,9 +1,81 @@
-header .wrapper {
-    
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.theme {
-    &__slider {
-        width: 60px;
+main {
+    height: 100;
+}
+
+
+/* HEADER */
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    // h1 logo
+    .logo {
+        margin-left: 10px;
+    }
+
+    // theme input styling
+    .theme {
+        display: flex;
+        align-items: flex-end;
+    
+        label {
+            padding-bottom: 7px;
+        }
+        
+        &__slider {
+            width: 60px;
+            margin-left: 20px;
+        }
+    
+        &__numbers {
+            display: flex;
+            justify-content: space-around;
+        }
     }
 }
+
+/* SCREEN DISPLAY */
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: clamp(80px, 11.99vh, 108px);
+    margin-bottom: 25px;
+    padding: 0 clamp(25px, 10.25%, 54px);
+    
+
+    p {
+        padding-top: 10px;
+    }
+}
+
+/* KEYPAD */
+.keypad {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    grid-gap: clamp(12.5px, 5%, 26.5px);
+    height: 465px;
+    padding: clamp(24.5px, 3.67vh, 30px);
+
+    &__btn {
+        width: 100%;
+
+        &--double {
+            grid-column: span 2;
+        }
+    }
+}
+
+/* FOOTER */
+footer {
+    display: none;
+}
+
