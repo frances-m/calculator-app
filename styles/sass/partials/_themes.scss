@@ -37,6 +37,10 @@
             color: $theme-one__text--dark;
             border-bottom-color: $theme-one__key--shadow;
 
+            &:hover {
+                background: $theme-one__hover-bg--key;
+            }
+
             &--text,
             &--equals {
                 color: $theme-one__text--light;
@@ -45,6 +49,10 @@
             &--text {
                 background: $theme-one__key--secondary;
                 border-bottom-color: $theme-one__key--secondary-shadow;
+
+                &:hover {
+                    background: $theme-one__hover-bg--secondary-key;
+                }
             }
 
             &--equals {

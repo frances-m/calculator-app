@@ -20,6 +20,11 @@ $theme-one__key--equals-shadow: hsl(6, 70%, 34%);
 $theme-one__text--dark: hsl(221, 14%, 31%);
 $theme-one__text--light: hsl(0, 0%, 100%);
 
+// hover
+$theme-one__hover-bg--key: hsl(0, 0%, 100%);
+$theme-one__hover-bg--secondary-key: #abaefa;
+$theme-one__hover-bg--equals-key: hsl(0, 0%, 100%);
+
 // *Theme 2* //
 // backgrounds
 $theme-two__bg--main: hsl(0, 0%, 90%);
@@ -39,6 +44,7 @@ $theme-two__key--equals-shadow: hsl(25, 99%, 27%);
 // text 
 $theme-two__text--dark: hsl(60, 10%, 19%);
 $theme-two__text--light: hsl(0, 0%, 100%);
+
 
 // *Theme 3* //
 // backgrounds

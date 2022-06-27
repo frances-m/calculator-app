@@ -388,12 +388,18 @@ body,
   color: hsl(221deg, 14%, 31%);
   border-bottom-color: hsl(28deg, 16%, 65%);
 }
+.theme-one .keypad__btn:hover {
+  background: hsl(0deg, 0%, 100%);
+}
 .theme-one .keypad__btn--text, .theme-one .keypad__btn--equals {
   color: hsl(0deg, 0%, 100%);
 }
 .theme-one .keypad__btn--text {
   background: hsl(225deg, 21%, 49%);
   border-bottom-color: hsl(224deg, 28%, 35%);
+}
+.theme-one .keypad__btn--text:hover {
+  background: #abaefa;
 }
 .theme-one .keypad__btn--equals {
   background: hsl(6deg, 63%, 50%);
