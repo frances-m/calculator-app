@@ -374,8 +374,14 @@ body,
 .theme-one input[type=range]::-webkit-slider-thumb {
   background: hsl(6deg, 63%, 50%);
 }
+.theme-one input[type=range]::-webkit-slider-thumb:hover {
+  background: hsl(6deg, 93%, 67%);
+}
 .theme-one input[type=range]::-moz-range-thumb {
   background: hsl(6deg, 63%, 50%);
+}
+.theme-one input[type=range]::-moz-range-thumb:hover {
+  background: hsl(6deg, 93%, 67%);
 }
 .theme-one .screen {
   background: hsl(224deg, 36%, 15%);
@@ -389,7 +395,7 @@ body,
   border-bottom-color: hsl(28deg, 16%, 65%);
 }
 .theme-one .keypad__btn:hover {
-  background: hsl(0deg, 0%, 100%);
+  background: hsl(0deg, 0%, 92%);
 }
 .theme-one .keypad__btn--text, .theme-one .keypad__btn--equals {
   color: hsl(0deg, 0%, 100%);
@@ -399,11 +405,14 @@ body,
   border-bottom-color: hsl(224deg, 28%, 35%);
 }
 .theme-one .keypad__btn--text:hover {
-  background: #abaefa;
+  background: hsl(224deg, 51%, 76%);
 }
 .theme-one .keypad__btn--equals {
   background: hsl(6deg, 63%, 50%);
   border-bottom-color: hsl(6deg, 70%, 34%);
+}
+.theme-one .keypad__btn--equals:hover {
+  background: hsl(6deg, 93%, 67%);
 }
 
 /* THEME TWO */
@@ -421,8 +430,14 @@ body,
 .theme-two input[type=range]::-webkit-slider-thumb {
   background: hsl(25deg, 98%, 40%);
 }
+.theme-two input[type=range]::-webkit-slider-thumb:hover {
+  background: hsl(25deg, 100%, 61%);
+}
 .theme-two input[type=range]::-moz-range-thumb {
   background: hsl(25deg, 98%, 40%);
+}
+.theme-two input[type=range]::-moz-range-thumb:hover {
+  background: hsl(25deg, 100%, 61%);
 }
 .theme-two .screen {
   background: hsl(0deg, 0%, 93%);
@@ -435,6 +450,9 @@ body,
   color: hsl(60deg, 10%, 19%);
   border-bottom-color: hsl(35deg, 11%, 61%);
 }
+.theme-two .keypad__btn:hover {
+  background: hsl(0deg, 0%, 100%);
+}
 .theme-two .keypad__btn--text, .theme-two .keypad__btn--equals {
   color: hsl(0deg, 0%, 100%);
 }
@@ -442,9 +460,15 @@ body,
   background: hsl(185deg, 42%, 37%);
   border-bottom-color: hsl(185deg, 58%, 25%);
 }
+.theme-two .keypad__btn--text:hover {
+  background: hsl(185deg, 41%, 56%);
+}
 .theme-two .keypad__btn--equals {
   background: hsl(25deg, 98%, 40%);
   border-bottom-color: hsl(25deg, 99%, 27%);
+}
+.theme-two .keypad__btn--equals:hover {
+  background: hsl(25deg, 100%, 61%);
 }
 
 /* THEME THREE */
@@ -462,14 +486,14 @@ body,
 .theme-three input[type=range]::-webkit-slider-thumb {
   background: hsl(176deg, 100%, 44%);
 }
-.theme-three input[type=range]::-webkit-slider-thumb:active {
-  background: hsl(177deg, 92%, 70%);
+.theme-three input[type=range]::-webkit-slider-thumb:hover {
+  background: hsl(177deg, 100%, 79%);
 }
 .theme-three input[type=range]::-moz-range-thumb {
   background: hsl(176deg, 100%, 44%);
 }
-.theme-three input[type=range]::-moz-range-thumb:active {
-  background: hsl(177deg, 92%, 70%);
+.theme-three input[type=range]::-moz-range-thumb:hover {
+  background: hsl(177deg, 100%, 79%);
 }
 .theme-three .screen {
   background: hsl(268deg, 71%, 12%);
@@ -482,15 +506,24 @@ body,
   color: hsl(52deg, 100%, 62%);
   border-bottom-color: hsl(290deg, 70%, 36%);
 }
+.theme-three .keypad__btn:hover {
+  background: hsl(265deg, 57%, 46%);
+}
 .theme-three .keypad__btn--text {
   color: hsl(0deg, 0%, 100%);
   background: hsl(281deg, 89%, 26%);
   border-bottom-color: hsl(285deg, 91%, 52%);
 }
+.theme-three .keypad__btn--text:hover {
+  background: hsl(265deg, 57%, 46%);
+}
 .theme-three .keypad__btn--equals {
   color: hsl(198deg, 20%, 13%);
   background: hsl(176deg, 100%, 44%);
   border-bottom-color: hsl(177deg, 92%, 70%);
+}
+.theme-three .keypad__btn--equals:hover {
+  background: hsl(177deg, 100%, 79%);
 }
 
 body {

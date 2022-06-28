@@ -11,6 +11,7 @@ app.$displayContainer = $( "#result-container" );
 app.displayValue = "";
 app.prevValue = 0;
 app.nextOperation = "";
+app.lastInput = "";
 app.needsReset = false;
 
 
@@ -94,7 +95,8 @@ app.calculate = () => {
 
 app.handleInput = (input) => {
     //const btnValue = input.attributes.value.value;
-    
+    app.lastInput = input;
+
     if (app.needsReset) {
         app.displayValue = "";
         app.needsReset = false;
@@ -126,6 +128,12 @@ app.handleInput = (input) => {
     
         case "Enter":
             app.calculate();
+            if (app.lastInput !== "Enter") {
+                app.prevValue = app.displayValue;
+            } 
+            if (app.displayValue === "0") {
+                app.needsReset = true;
+            }
             break;
     
         default:
@@ -144,6 +152,7 @@ app.handleKeyboardInput = ({ key }) => {
     const eligibleKeys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "+", "-", "*", "/", "Delete", "Backspace", "Escape", "Enter"];
 
     if (eligibleKeys.includes(key)) {
+        console.log(key);
         app.handleInput(key);
     }
 }
