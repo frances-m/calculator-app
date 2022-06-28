@@ -73,6 +73,14 @@
         }
     }
 
+    .attribution {
+        color: $theme-one__key--bg;
+
+        a {
+            color: $theme-one__hover--tertiary;
+        }
+    }
+
     ::-webkit-scrollbar-thumb {
         background-color: $theme-one__key--secondary;
     }
@@ -155,6 +163,14 @@
         }
     }
 
+    .attribution {
+        color: $theme-two__text--dark;
+
+        a {
+            color: $theme-two__key--secondary;
+        }
+    }
+
     ::-webkit-scrollbar-thumb {
         background-color: $theme-two__key--secondary;
     }
@@ -231,6 +247,14 @@
                     background: $theme-three__hover--tertiary;
                 }
             }
+        }
+    }
+
+    .attribution {
+        color: $theme-three__key--secondary-shadow;
+
+        a {
+            color: $theme-three__key--equals;
         }
     }
 

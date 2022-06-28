@@ -425,6 +425,12 @@ body,
 .theme-one .keypad__btn--equals:hover, .theme-one .keypad__btn--equals:focus-visible {
   background: hsl(6deg, 93%, 67%);
 }
+.theme-one .attribution {
+  color: hsl(30deg, 25%, 89%);
+}
+.theme-one .attribution a {
+  color: hsl(6deg, 93%, 67%);
+}
 .theme-one ::-webkit-scrollbar-thumb {
   background-color: hsl(225deg, 21%, 49%);
 }
@@ -484,6 +490,12 @@ body,
 .theme-two .keypad__btn--equals:hover, .theme-two .keypad__btn--equals:focus-visible {
   background: hsl(25deg, 100%, 61%);
 }
+.theme-two .attribution {
+  color: hsl(60deg, 10%, 19%);
+}
+.theme-two .attribution a {
+  color: hsl(185deg, 42%, 37%);
+}
 .theme-two ::-webkit-scrollbar-thumb {
   background-color: hsl(185deg, 42%, 37%);
 }
@@ -541,6 +553,12 @@ body,
 }
 .theme-three .keypad__btn--equals:hover, .theme-three .keypad__btn--equals:focus-visible {
   background: hsl(177deg, 100%, 79%);
+}
+.theme-three .attribution {
+  color: hsl(285deg, 91%, 52%);
+}
+.theme-three .attribution a {
+  color: hsl(176deg, 100%, 44%);
 }
 .theme-three ::-webkit-scrollbar-thumb {
   background-color: hsl(281deg, 89%, 26%);
@@ -641,7 +659,8 @@ header .wrapper .theme__numbers {
 
 /* FOOTER */
 footer {
-  display: none;
+  text-align: center;
+  padding-top: 20px;
 }
 
 @media (min-height: 750px) {

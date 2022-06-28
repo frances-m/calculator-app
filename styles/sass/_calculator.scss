@@ -51,7 +51,6 @@ header .wrapper {
     margin-bottom: 25px;
     padding: 0 clamp(25px, 10.25%, 54px) 0 clamp(15px, 9%, 40px);
     
-    
     p {
         width: 100%;
         padding: 20px 0 10px 0;
@@ -79,5 +78,6 @@ header .wrapper {
 
 /* FOOTER */
 footer {
-    display: none;
+    text-align: center;
+    padding-top: 20px;
 }
