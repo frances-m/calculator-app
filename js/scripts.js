@@ -18,7 +18,6 @@ app.needsReset = false;
 app.init = () => {
     if (window.localStorage.theme !== "undefined") {
         app.$themesSlider.val(window.localStorage.theme);
-        console.log(window.localStorage.theme);
     }
     app.setTheme();
 
@@ -33,7 +32,6 @@ app.init = () => {
 app.setLocalTheme = () => {
     if (typeof window.localStorage !== "undefined") {
         window.localStorage.theme = app.$themesSlider.val();
-        console.log(window.localStorage.theme);
     }
 }
 
