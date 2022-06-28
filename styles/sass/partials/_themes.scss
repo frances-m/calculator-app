@@ -42,7 +42,8 @@
             border-bottom-color: $theme-one__key--shadow;
 
             &:hover,
-            &:focus-visible {
+            &:focus-visible,
+            &.active {
                 background: $theme-one__hover--main;
             }
 
@@ -56,7 +57,8 @@
                 border-bottom-color: $theme-one__key--secondary-shadow;
 
                 &:hover,
-                &:focus-visible {
+                &:focus-visible,
+                &.active {
                     background: $theme-one__hover--secondary;
                 }
             }
@@ -66,7 +68,8 @@
                 border-bottom-color: $theme-one__key--equals-shadow;
 
                 &:hover,
-                &:focus-visible {
+                &:focus-visible,
+                &.active {
                     background: $theme-one__hover--tertiary;
                 }
             }
@@ -132,7 +135,8 @@
             border-bottom-color: $theme-two__key--shadow;
 
             &:hover,
-            &:focus-visible {
+            &:focus-visible,
+            &.active {
                 background: $theme-two__hover--main;
             }
 
@@ -146,7 +150,8 @@
                 border-bottom-color: $theme-two__key--secondary-shadow;
 
                 &:hover,
-                &:focus-visible {
+                &:focus-visible,
+                &.active {
                     background: $theme-two__hover--secondary;
                 }
             }
@@ -156,7 +161,8 @@
                 border-bottom-color: $theme-two__key--equals-shadow;
 
                 &:hover,
-                &:focus-visible {
+                &:focus-visible,
+                &.active {
                     background: $theme-two__hover--tertiary;
                 }
             }
@@ -222,7 +228,8 @@
             border-bottom-color: $theme-three__key--shadow;
 
             &:hover,
-            &:focus-visible {
+            &:focus-visible,
+            &.active {
                 background: $theme-three__hover--main;
             }
 
@@ -232,7 +239,8 @@
                 border-bottom-color: $theme-three__key--secondary-shadow;
 
                 &:hover,
-                &:focus-visible {
+                &:focus-visible,
+                &.active {
                     background: $theme-three__hover--secondary;
                 }
             }
@@ -243,7 +251,8 @@
                 border-bottom-color: $theme-three__key--equals-shadow;
 
                 &:hover,
-                &:focus-visible {
+                &:focus-visible,
+                &.active {
                     background: $theme-three__hover--tertiary;
                 }
             }

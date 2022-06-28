@@ -147,6 +147,10 @@ app.handleInput = (input) => {
             }
             break;
     
+        case ".":
+            if (app.displayValue.includes(".")) {
+                break;
+            }
         default:
             if (input === "0" && app.displayValue === "") {
                 break;
@@ -159,11 +163,48 @@ app.handleInput = (input) => {
 }
 
 
-app.handleKeyboardInput = ({ key }) => {
-    const eligibleKeys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "+", "-", "*", "/", "Delete", "Backspace", "Escape", "="];
+app.handleKeyboardInput = (e) => {
+    const eligibleKeys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "+", "-", "*", "/", "Delete", "Backspace", "Escape", "=", "."];
 
-    if (eligibleKeys.includes(key)) {
-        app.handleInput(key);
+    if (eligibleKeys.includes(e.key)) {
+        e.preventDefault();
+        app.handleInput(e.key);
+
+        let keyId = "";
+        switch (e.key) {
+            case "+":
+                keyId = "add";
+                break;
+            case "-":
+                keyId = "sub";
+                break;
+            case "*":
+                keyId = "mult";
+                break;
+            case "/":
+                keyId = "div";
+                break;
+            case "=":
+                keyId = "equals";
+                break;
+            case "Escape":
+                keyId = "reset";
+                break;
+            case "Delete":
+            case "Backspace":
+                keyId = "del";
+                break;
+            case ".":
+                keyId = "dec";
+                break;
+            default:
+                keyId = e.key;
+        }
+
+        $(`#${keyId}`).toggleClass("active");
+        setTimeout(() => {
+            $(`#${keyId}`).toggleClass("active");
+        }, 200);
     }
 }
 
