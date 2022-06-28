@@ -72,6 +72,11 @@
             }
         }
     }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $theme-one__key--secondary;
+    }
+
 }
 
 /* THEME TWO */
@@ -149,6 +154,11 @@
             }
         }
     }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $theme-two__key--secondary;
+    }
+
 }
 
 /* THEME THREE */
@@ -223,5 +233,10 @@
             }
         }
     }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $theme-three__key--secondary;
+    }
+
 }
 

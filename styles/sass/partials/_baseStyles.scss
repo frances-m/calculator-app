@@ -37,3 +37,16 @@ input[type=range] {
 a {
     text-decoration: none;
 }
+
+::-webkit-scrollbar {
+    opacity: 0;
+    height: 5px;
+    
+    &-thumb {
+        border-radius: 10px;
+    }
+
+    &-corner {
+        opacity: 0;
+    }
+}

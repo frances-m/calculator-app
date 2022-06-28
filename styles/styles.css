@@ -317,6 +317,17 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  opacity: 0;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-corner {
+  opacity: 0;
+}
+
 html {
   font-size: 125%;
 }
@@ -414,6 +425,9 @@ body,
 .theme-one .keypad__btn--equals:hover, .theme-one .keypad__btn--equals:focus-visible {
   background: hsl(6deg, 93%, 67%);
 }
+.theme-one ::-webkit-scrollbar-thumb {
+  background-color: hsl(225deg, 21%, 49%);
+}
 
 /* THEME TWO */
 .theme-two {
@@ -470,6 +484,9 @@ body,
 .theme-two .keypad__btn--equals:hover, .theme-two .keypad__btn--equals:focus-visible {
   background: hsl(25deg, 100%, 61%);
 }
+.theme-two ::-webkit-scrollbar-thumb {
+  background-color: hsl(185deg, 42%, 37%);
+}
 
 /* THEME THREE */
 .theme-three {
@@ -524,6 +541,9 @@ body,
 }
 .theme-three .keypad__btn--equals:hover, .theme-three .keypad__btn--equals:focus-visible {
   background: hsl(177deg, 100%, 79%);
+}
+.theme-three ::-webkit-scrollbar-thumb {
+  background-color: hsl(281deg, 89%, 26%);
 }
 
 body {
@@ -598,7 +618,9 @@ header .wrapper .theme__numbers {
   padding: 0 clamp(25px, 10.25%, 54px) 0 clamp(15px, 9%, 40px);
 }
 .screen p {
-  padding-top: 10px;
+  width: 100%;
+  padding: 20px 0 10px 0;
+  text-align: right;
   overflow: scroll;
 }
 
