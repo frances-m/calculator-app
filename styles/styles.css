@@ -394,7 +394,7 @@ body,
   color: hsl(221deg, 14%, 31%);
   border-bottom-color: hsl(28deg, 16%, 65%);
 }
-.theme-one .keypad__btn:hover {
+.theme-one .keypad__btn:hover, .theme-one .keypad__btn:focus-visible {
   background: hsl(0deg, 0%, 92%);
 }
 .theme-one .keypad__btn--text, .theme-one .keypad__btn--equals {
@@ -404,14 +404,14 @@ body,
   background: hsl(225deg, 21%, 49%);
   border-bottom-color: hsl(224deg, 28%, 35%);
 }
-.theme-one .keypad__btn--text:hover {
+.theme-one .keypad__btn--text:hover, .theme-one .keypad__btn--text:focus-visible {
   background: hsl(224deg, 51%, 76%);
 }
 .theme-one .keypad__btn--equals {
   background: hsl(6deg, 63%, 50%);
   border-bottom-color: hsl(6deg, 70%, 34%);
 }
-.theme-one .keypad__btn--equals:hover {
+.theme-one .keypad__btn--equals:hover, .theme-one .keypad__btn--equals:focus-visible {
   background: hsl(6deg, 93%, 67%);
 }
 
@@ -430,13 +430,13 @@ body,
 .theme-two input[type=range]::-webkit-slider-thumb {
   background: hsl(25deg, 98%, 40%);
 }
-.theme-two input[type=range]::-webkit-slider-thumb:hover {
+.theme-two input[type=range]::-webkit-slider-thumb:hover, .theme-two input[type=range]::-webkit-slider-thumb:focus-visible {
   background: hsl(25deg, 100%, 61%);
 }
 .theme-two input[type=range]::-moz-range-thumb {
   background: hsl(25deg, 98%, 40%);
 }
-.theme-two input[type=range]::-moz-range-thumb:hover {
+.theme-two input[type=range]::-moz-range-thumb:hover, .theme-two input[type=range]::-moz-range-thumb:focus-visible {
   background: hsl(25deg, 100%, 61%);
 }
 .theme-two .screen {
@@ -450,7 +450,7 @@ body,
   color: hsl(60deg, 10%, 19%);
   border-bottom-color: hsl(35deg, 11%, 61%);
 }
-.theme-two .keypad__btn:hover {
+.theme-two .keypad__btn:hover, .theme-two .keypad__btn:focus-visible {
   background: hsl(0deg, 0%, 100%);
 }
 .theme-two .keypad__btn--text, .theme-two .keypad__btn--equals {
@@ -460,14 +460,14 @@ body,
   background: hsl(185deg, 42%, 37%);
   border-bottom-color: hsl(185deg, 58%, 25%);
 }
-.theme-two .keypad__btn--text:hover {
+.theme-two .keypad__btn--text:hover, .theme-two .keypad__btn--text:focus-visible {
   background: hsl(185deg, 41%, 56%);
 }
 .theme-two .keypad__btn--equals {
   background: hsl(25deg, 98%, 40%);
   border-bottom-color: hsl(25deg, 99%, 27%);
 }
-.theme-two .keypad__btn--equals:hover {
+.theme-two .keypad__btn--equals:hover, .theme-two .keypad__btn--equals:focus-visible {
   background: hsl(25deg, 100%, 61%);
 }
 
@@ -486,13 +486,13 @@ body,
 .theme-three input[type=range]::-webkit-slider-thumb {
   background: hsl(176deg, 100%, 44%);
 }
-.theme-three input[type=range]::-webkit-slider-thumb:hover {
+.theme-three input[type=range]::-webkit-slider-thumb:hover, .theme-three input[type=range]::-webkit-slider-thumb:focus-visible {
   background: hsl(177deg, 100%, 79%);
 }
 .theme-three input[type=range]::-moz-range-thumb {
   background: hsl(176deg, 100%, 44%);
 }
-.theme-three input[type=range]::-moz-range-thumb:hover {
+.theme-three input[type=range]::-moz-range-thumb:hover, .theme-three input[type=range]::-moz-range-thumb:focus-visible {
   background: hsl(177deg, 100%, 79%);
 }
 .theme-three .screen {
@@ -506,7 +506,7 @@ body,
   color: hsl(52deg, 100%, 62%);
   border-bottom-color: hsl(290deg, 70%, 36%);
 }
-.theme-three .keypad__btn:hover {
+.theme-three .keypad__btn:hover, .theme-three .keypad__btn:focus-visible {
   background: hsl(265deg, 57%, 46%);
 }
 .theme-three .keypad__btn--text {
@@ -514,7 +514,7 @@ body,
   background: hsl(281deg, 89%, 26%);
   border-bottom-color: hsl(285deg, 91%, 52%);
 }
-.theme-three .keypad__btn--text:hover {
+.theme-three .keypad__btn--text:hover, .theme-three .keypad__btn--text:focus-visible {
   background: hsl(265deg, 57%, 46%);
 }
 .theme-three .keypad__btn--equals {
@@ -522,7 +522,7 @@ body,
   background: hsl(176deg, 100%, 44%);
   border-bottom-color: hsl(177deg, 92%, 70%);
 }
-.theme-three .keypad__btn--equals:hover {
+.theme-three .keypad__btn--equals:hover, .theme-three .keypad__btn--equals:focus-visible {
   background: hsl(177deg, 100%, 79%);
 }
 
@@ -595,10 +595,11 @@ header .wrapper .theme__numbers {
           align-items: center;
   height: clamp(80px, 11.99vh, 108px);
   margin-bottom: 25px;
-  padding: 0 clamp(25px, 10.25%, 54px);
+  padding: 0 clamp(25px, 10.25%, 54px) 0 clamp(15px, 9%, 40px);
 }
 .screen p {
   padding-top: 10px;
+  overflow: scroll;
 }
 
 /* KEYPAD */

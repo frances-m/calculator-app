@@ -28,26 +28,19 @@ app.swapThemes = (theme) => {
 
 // calls app.swapThemes() based on user interaction with the themes slider
 app.setTheme = () => {
-    const sliderValue = app.$themesSlider.val();
-
-    if (sliderValue === "1") {
-        app.swapThemes("theme-one");
-    } else if (sliderValue === "2") {
-        app.swapThemes("theme-two");
-    } else if (sliderValue === "3") {
-        app.swapThemes("theme-three");
-    } else {
-        app.$themesSlider.val("1");
-        app.swapThemes("theme-one");
-    }
-}
-
-/*** DISPLAY CSS ***/
-app.maxDisplayWidth = () => {
-    if (app.$display.innerWidth() * 1.33 > app.$displayContainer.innerWidth()) {
-        return true;
-    } else {
-        return false;
+    switch (app.$themesSlider.val()) {
+        case "1":
+            app.swapThemes("theme-one");
+            break;
+        case "2":
+            app.swapThemes("theme-two");
+            break;
+        case "3":
+            app.swapThemes("theme-three");
+            break;
+        default:
+            app.$themesSlider.val("1");
+            app.swapThemes("theme-one");
     }
 }
 
@@ -94,7 +87,6 @@ app.calculate = () => {
 }
 
 app.handleInput = (input) => {
-    //const btnValue = input.attributes.value.value;
     app.lastInput = input;
 
     if (app.needsReset) {
@@ -126,9 +118,9 @@ app.handleInput = (input) => {
             app.prepDisplayReset("", "");
             break;
     
-        case "Enter":
+        case "=":
             app.calculate();
-            if (app.lastInput !== "Enter") {
+            if (app.lastInput !== "=") {
                 app.prevValue = app.displayValue;
             } 
             if (app.displayValue === "0") {
@@ -140,26 +132,22 @@ app.handleInput = (input) => {
             if (input === "0" && app.displayValue === "") {
                 break;
             }
-            if (app.maxDisplayWidth()) {
-                break;
-            }
+
             app.updateDisplayValue(input);
     }
 }
 
 
 app.handleKeyboardInput = ({ key }) => {
-    const eligibleKeys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "+", "-", "*", "/", "Delete", "Backspace", "Escape", "Enter"];
+    const eligibleKeys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "+", "-", "*", "/", "Delete", "Backspace", "Escape", "="];
 
     if (eligibleKeys.includes(key)) {
-        console.log(key);
         app.handleInput(key);
     }
 }
 
 
 $(() => {
-    console.log("ready");
     app.init();
     app.$themesSlider.change(() => app.setTheme());
     app.$keypadBtn.click((event) => app.handleInput(event.currentTarget.attributes.value.value));

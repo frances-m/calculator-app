@@ -41,7 +41,8 @@
             color: $theme-one__text--dark;
             border-bottom-color: $theme-one__key--shadow;
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 background: $theme-one__hover--main;
             }
 
@@ -54,7 +55,8 @@
                 background: $theme-one__key--secondary;
                 border-bottom-color: $theme-one__key--secondary-shadow;
 
-                &:hover {
+                &:hover,
+                &:focus-visible {
                     background: $theme-one__hover--secondary;
                 }
             }
@@ -63,7 +65,8 @@
                 background: $theme-one__key--equals;
                 border-bottom-color: $theme-one__key--equals-shadow;
 
-                &:hover {
+                &:hover,
+                &:focus-visible {
                     background: $theme-one__hover--tertiary;
                 }
             }
@@ -87,14 +90,16 @@
         &::-webkit-slider-thumb { 
             background: $theme-two__key--equals; 
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 background: $theme-two__hover--tertiary;
             }
         }
         &::-moz-range-thumb { 
             background: $theme-two__key--equals;
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 background: $theme-two__hover--tertiary;
             }
         }
@@ -113,7 +118,8 @@
             color: $theme-two__text--dark;
             border-bottom-color: $theme-two__key--shadow;
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 background: $theme-two__hover--main;
             }
 
@@ -126,7 +132,8 @@
                 background: $theme-two__key--secondary;
                 border-bottom-color: $theme-two__key--secondary-shadow;
 
-                &:hover {
+                &:hover,
+                &:focus-visible {
                     background: $theme-two__hover--secondary;
                 }
             }
@@ -135,7 +142,8 @@
                 background: $theme-two__key--equals;
                 border-bottom-color: $theme-two__key--equals-shadow;
 
-                &:hover {
+                &:hover,
+                &:focus-visible {
                     background: $theme-two__hover--tertiary;
                 }
             }
@@ -159,14 +167,16 @@
         &::-webkit-slider-thumb { 
             background: $theme-three__key--equals; 
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 background: $theme-three__hover--tertiary;
             }
         }
         &::-moz-range-thumb { 
             background: $theme-three__key--equals; 
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 background: $theme-three__hover--tertiary;
             }
         }
@@ -185,7 +195,8 @@
             color: $theme-three__text--main;
             border-bottom-color: $theme-three__key--shadow;
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 background: $theme-three__hover--main;
             }
 
@@ -194,7 +205,8 @@
                 background: $theme-three__key--secondary;
                 border-bottom-color: $theme-three__key--secondary-shadow;
 
-                &:hover {
+                &:hover,
+                &:focus-visible {
                     background: $theme-three__hover--secondary;
                 }
             }
@@ -204,7 +216,8 @@
                 background: $theme-three__key--equals;
                 border-bottom-color: $theme-three__key--equals-shadow;
 
-                &:hover {
+                &:hover,
+                &:focus-visible {
                     background: $theme-three__hover--tertiary;
                 }
             }
