@@ -87,7 +87,6 @@ app.calculate = () => {
 }
 
 app.handleInput = (input) => {
-    app.lastInput = input;
 
     if (app.needsReset) {
         app.displayValue = "";
@@ -119,10 +118,14 @@ app.handleInput = (input) => {
             break;
     
         case "=":
+            const freezeValue = app.displayValue;
+
             app.calculate();
+
             if (app.lastInput !== "=") {
-                app.prevValue = app.displayValue;
+                app.prevValue = freezeValue;
             } 
+            
             if (app.displayValue === "0") {
                 app.needsReset = true;
             }
@@ -135,6 +138,8 @@ app.handleInput = (input) => {
 
             app.updateDisplayValue(input);
     }
+
+    app.lastInput = input;
 }
 
 
