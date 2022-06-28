@@ -16,10 +16,27 @@ app.needsReset = false;
 
 
 app.init = () => {
+    if (window.localStorage.theme !== "undefined") {
+        app.$themesSlider.val(window.localStorage.theme);
+        console.log(window.localStorage.theme);
+    }
     app.setTheme();
+
+    app.$themesSlider.change(() => app.setTheme());
+    app.$keypadBtn.click((event) => app.handleInput(event.currentTarget.attributes.value.value));
+    $(window).keydown((event) => app.handleKeyboardInput(event));
+    
 }
 
 /*** THEMES ***/
+
+app.setLocalTheme = () => {
+    if (typeof window.localStorage !== "undefined") {
+        window.localStorage.theme = app.$themesSlider.val();
+        console.log(window.localStorage.theme);
+    }
+}
+
 // swaps class of the body element
 app.swapThemes = (theme) => {
     app.$body.removeClass();
@@ -42,6 +59,7 @@ app.setTheme = () => {
             app.$themesSlider.val("1");
             app.swapThemes("theme-one");
     }
+    app.setLocalTheme();
 }
 
 
@@ -154,7 +172,4 @@ app.handleKeyboardInput = ({ key }) => {
 
 $(() => {
     app.init();
-    app.$themesSlider.change(() => app.setTheme());
-    app.$keypadBtn.click((event) => app.handleInput(event.currentTarget.attributes.value.value));
-    $(window).keydown((event) => app.handleKeyboardInput(event));
 });
