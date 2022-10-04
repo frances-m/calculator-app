@@ -87,6 +87,5 @@ app.setTheme();
 
 - Website - [Frances McKenzie](https://francesm.dev)
 - Frontend Mentor - [@frances-m](https://www.frontendmentor.io/profile/frances-m)
-- Twitter - [@fr_ncesm](https://twitter.com/fr_ncesm)
 - LinkedIn - [Frances McKenzie](https://www.linkedin.com/in/frances-mckenzie-104035241/)
 
